@@ -2,68 +2,77 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Frontend</title>
-    <base href="/" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <meta name="description" content="" />
+    <meta
+      name="author"
+      content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
+    />
+    <meta name="generator" content="Hugo 0.83.1" />
+    <title>Proyecto PIL</title>
+
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/5.0/examples/sign-in/"
+    />
+
+    <!-- Bootstrap core CSS -->
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet" />
+
     <style>
-      h2{
-        background-color: aquamarine;
-        text-align: center;
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      .destacado{
+        color: white;
+        font-weight: bold;
       }
     </style>
   </head>
+  <body class="text-center">
+    <main class="form-signin">
+      <form>
+        <div class="form-floating">
+          <input
+            type="email"
+            class="form-control"
+            id="floatingInput"
+            placeholder="name@example.com"
+          />
+          <label for="floatingInput">Email</label>
+        </div>
+        <div class="form-floating">
+          <input
+            type="password"
+            class="form-control"
+            id="floatingPassword"
+            placeholder="Password"
+          />
+          <label for="floatingPassword">Contraseña</label>
+        </div>
 
-  <body>
+        <button class="w-100 btn btn-lg btn-primary" type="submit">
+          Ingresar
+        </button>
+       
+        <div class="checkbox mb-3">
+          <label>
+            <input type="checkbox" value="remember-me" />Recordarme
+          </label>
+        </div>
 
-    <header>
-
-      <h1>Aprendiendo HTML y CSS</h1>
-
-    </header>
-
-    <section>
-
-      <h2><strong>Qué es HTML?</strong></h2>
-
-      <a href="https://www.google.com.ar/" target="_blank">Ir a Google</a><br>
-      <a href="#ImgTres">Ir a la Imagen Tres</a>
-
-      <ol>
-        <li>Describe la <em>ESTRUCTURA</em> y el <em>CONTENIDO</em> de una página web.</li>
-        <li>Consiste en etiquetas.</li>
-        <li>Las etiquetas le dicen al navegador cómo mostrar el contenido.</li>
-        <li>
-          Es un lenguaje y como tal tiene su vocabulario (palabras), su
-          gramática (reglas).
-        </li>
-        <li>En la actualidad el HTML está definido por el W3C.</li>
-      </ol>
-
-      <h2>Estructura básica</h2>
-
-      <img src="assets/img/uno.jpg" alt="Imagen Uno" />
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing. Imagen de google
-        chrome
-      </p>
-
-      <img src="assets/img/dos.jpg" alt="Imagen Dos" width="300px" height="250px"/>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
-        asperiores perferendis aspernatur optio earum officia corporis porro
-        dolorem aliquid architecto, error magni quia voluptates voluptatum
-        voluptatem cumque, voluptate quidem iste.
-      </p>
-
-      <img src="assets/img/tres.jpg" alt="Imagen tres" id="ImgTres">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus reprehenderit nam deleniti, esse ullam dolorum eius ut officiis placeat? Provident.</p>
-
-    </section>
-
-    <footer">
-      <p>#PIL 2021</p>
-    </footer>
-
+        <p class="destacado mt-5 mb-3 text-muted">&copy; Sala I Grupo II 2021</p>
+      </form>
+    </main>
   </body>
 </html>
