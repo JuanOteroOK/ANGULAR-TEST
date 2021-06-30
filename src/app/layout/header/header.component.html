@@ -1,3 +1,5 @@
-<header class="container-fluid bg-dark text-white p-2">
-    <h1>Programa PIL</h1>
+<header #myheader id="grad" class="container-fluid bg-dark text-white p-2">
+    <h2 id="subtitulo">{{getTitulo()}}</h2>
+    <button class="btn" [ngClass]="{on: estadoPositivo, off: !estadoPositivo}" (click)="cambiarEstado()">{{texto}}</button>
+    <input type="text" [(ngModel)]="nombre">
 </header>
