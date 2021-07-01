@@ -3,10 +3,12 @@ import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
 import { IniciarSesionComponent } from './pages/iniciar-sesion/iniciar-sesion.component';
+import { MovimientosComponent } from './pages/movimientos/movimientos.component';
 
 const routes: Routes = [
 {path: 'home', component: HomeComponent},
 {path: 'iniciar-sesion', component: IniciarSesionComponent},
+{path: 'movimientos', component: MovimientosComponent},
 {path: '', redirectTo: '/home', pathMatch: 'full'},
 /*{path:'**', component: PageNotFoundComponent}*/
 ];
