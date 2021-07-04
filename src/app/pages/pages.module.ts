@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home/home.component';
 import { IniciarSesionComponent } from './iniciar-sesion/iniciar-sesion.component';
 import { MovimientosComponent } from './movimientos/movimientos.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -13,7 +14,9 @@ import { MovimientosComponent } from './movimientos/movimientos.component';
     MovimientosComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   exports:[HomeComponent, IniciarSesionComponent, MovimientosComponent]
 })

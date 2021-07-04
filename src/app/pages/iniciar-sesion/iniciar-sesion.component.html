@@ -1,1 +1,39 @@
-<p>iniciar-sesion works!</p>
+<form>
+  <div class="form-group">
+    <label for="email">Email Address:</label>
+    <input
+      type="email"
+      class="form-control"
+      [formControl]="mail"
+      placeholder="Enter Email"
+      id="email"
+    />
+    <div *ngIf="mailField.errors && mailField.dirty"  class="text-danger">
+      <p *ngIf="mailField.hasError('required')">
+        El mail es requerido.
+      </p>
+      <p *ngIf="mailField.hasError('email')">
+        El formato del mail debe ser válido.
+      </p>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="pwd">Password:</label>
+    <input
+      type="password"
+      class="form-control"
+      [formControl]="pass"
+      placeholder="Enter Password"
+      id="pwd"
+    />
+    <div *ngIf="passField.errors && mailField.dirty"  class="text-danger">
+        <p *ngIf="passField.hasError('required')">
+          La contraseña es requereida.
+        </p>
+        <p *ngIf="passField.hasError('minLength')">
+          El formato de contraseña debe ser valido.
+        </p>
+      </div>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>

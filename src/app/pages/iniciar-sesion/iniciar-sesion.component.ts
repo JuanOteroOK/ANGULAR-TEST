@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-iniciar-sesion',
@@ -7,9 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IniciarSesionComponent implements OnInit {
 
+  mail=new FormControl('', [Validators.required, Validators.email]);
+  pass=new FormControl('', [Validators.required, Validators.minLength(8)]);
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  get mailField(){
+    return this.mail;
+  }
+
+  get passField(){
+    return this.pass;
   }
 
 }
