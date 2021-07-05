@@ -4,6 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { IniciarSesionComponent } from './iniciar-sesion/iniciar-sesion.component';
 import { MovimientosComponent } from './movimientos/movimientos.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { TermsComponent } from './terms/terms.component';
 
 
 
@@ -11,7 +12,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
   declarations: [
     HomeComponent,
     IniciarSesionComponent,
-    MovimientosComponent
+    MovimientosComponent,
+    TermsComponent
   ],
   imports: [
     CommonModule,
